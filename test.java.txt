@@ -1,7 +1,0 @@
-class Demo{
-	//psvm - keywords- public static void 
-	public static void main(String[] abc){
-		System.out.print("Hello JAVA...");
-		System.out.print("Hello World...");
-	}
-}
