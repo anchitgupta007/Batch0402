@@ -1,25 +1,19 @@
-package demowhile;
+// reverse of string
+package stringdemo;
 
-import java.util.Scanner;
+import java.util.Arrays;
 
 public class Reverse {
 
 	public static void main(String[] args) {
-		Scanner n=new Scanner(System.in);
-		System.out.println("Enter a number:");
-		int a=n.nextInt();
-		int rev=0;
-		int rem;
-	
-		while(a>0) {
-			rem=a%10;
-			a=a/10;
-			rev=rev*10+rem;
+
+		String str = "Javalanguage";
+		String str1 = "";
+		int count = str.length();
+		for (int i = count - 1; i >= 0; i--) {
+			str1 = str1 + str.charAt(i);
 		}
-		System.out.println("Revrse of entered number is:"+rev);
+		System.out.println(str1);
 
 	}
-
-
-		
 }
