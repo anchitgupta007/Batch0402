@@ -1,16 +1,16 @@
-package oops.Inheritance.SingleLevel;
+package oops.Inheritance.MultiLevel;
 
-public class ParentClass {
+public class ParentClass extends SuperParentClass {
 
-	int x=100;
-	int y=10;
-	public static int add(int x,int y) {
-		int c=x+y;
-		return c;
+	public ParentClass(int x, int y) {
+		this(x);
+
+		System.out.println("Parent class 2 parameter constructor");
 	}
-	public static int multi(int x,int y) {
-		int c=x*y;
-		return c;
+
+	public ParentClass(int x) {
+		super(x, x);
+		
+		System.out.println("Parent class 1 parameter constructor");
 	}
-	
 }
